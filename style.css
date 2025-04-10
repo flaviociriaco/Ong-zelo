@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-primaria: #00eeff;
+    /* Azul */
+    --cor-secundaria: #28a745;
+    /* Verde */
+    --cor-de-fundo: #f8f9fa;
+    /* Cinza claro */
+    --cor-texto: #0a0c51;
+    /* azul-escuro*/
+}
+
+body {
+    color: var(--cor-texto);
+}
+
+header {
+    background-color:var(--cor-de-fundo);
+}
+
+header .logo {
+    width: 200px;
+}
+
+section {
+    color: var(--cor-texto);
+}
+.sobre {
+    background-color: var(--cor-secundaria);
+}
+
+.sobre-texto {
+    text-align: justify;
+}
+
+.btn-form {
+  
+    font-weight: 600;
+}
+
+.nav-link {
+    color: var(--cor-texto);
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.formulario-contato {
+    max-height: 200px;
+    max-width: 400px;
+}
+
+ .equipe {
+    background-color: var(--cor-primaria);
+}
+
+footer {
+    background-color: var(--cor-secundaria);
+}
+footer p {
+    color: var(--cor-texto);
+}
+
+i {
+    font-size: 1.5rem;
+    color: var(--cor-texto);
+}
+
+/* Estilos para garantir a mesma altura nas seções */
+.secao-altura-igual {
+    min-height: 500px;
+    /* Ajuste este valor conforme necessário */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.secao-altura-igual>.container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Ajuste para o banner, que geralmente ocupa a tela */
+.banner {
+    min-height: 400px;
+    /* Ajuste conforme desejado */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner img {
+    object-fit: cover;
+    height: 100%;
+}
+
+.contato {
+    background-color: var(--cor-secundaria);
+}
+
+/* Estilos adicionais para melhorar a visualização */
+#sobre .container .row>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+    /* Garante uma altura mínima para o conteúdo "Sobre" */
+}
+
+#projetos .card {
+    display: flex;
+    flex-direction: column;
+}
+
+#projetos .card-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#contato .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 400px;
+   
+    /* Garante uma altura mínima para o formulário de contato */
+}
+
+#mapa-container {
+    width: 100%;
+    height: 400px; /* Ajuste a altura conforme necessário */
+}
+
+
+/* Media query para telas menores (sm mobile) */
+@media (max-width: 768px) {
+    .banner {
+        align-items: flex-start;
+        /* Ou flex-end, dependendo do que você deseja */
+        min-height: auto;
+        /* Ajuste a altura conforme necessário em mobile */
+    }
+
+    .text-sm-center {
+        text-align: center;
+    }
+}
