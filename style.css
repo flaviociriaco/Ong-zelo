@@ -22,7 +22,7 @@ body {
 
 
 header {
-    background-color:var(--cor-de-fundo);
+    background-color: var(--cor-de-fundo);
 }
 
 header .logo {
@@ -32,6 +32,7 @@ header .logo {
 section {
     color: var(--cor-texto);
 }
+
 .sobre {
     background-color: var(--cor-secundaria);
 }
@@ -41,7 +42,7 @@ section {
 }
 
 .btn-form {
-  
+
     font-weight: 600;
 }
 
@@ -56,13 +57,14 @@ section {
     max-width: 400px;
 }
 
- .equipe {
+.equipe {
     background-color: var(--cor-primaria);
 }
 
 footer {
     background-color: var(--cor-secundaria);
 }
+
 footer p {
     color: var(--cor-texto);
 }
@@ -111,7 +113,7 @@ i {
     display: flex;
     flex-direction: column;
     justify-content: center;
-  
+
     /* Garante uma altura mínima para o conteúdo "Sobre" */
 }
 
@@ -132,13 +134,17 @@ i {
     flex-direction: column;
     justify-content: center;
     min-height: 400px;
-   
+
     /* Garante uma altura mínima para o formulário de contato */
 }
 
-#mapa-container {
-    width: 100%;
-    height: 400px; /* Ajuste a altura conforme necessário */
+#banner,
+#sobre,
+#projetos,
+#contato,
+#equipe {
+    scroll-margin-top: 80px;
+    /* Ajuste o valor conforme a altura da sua navbar */
 }
 
 
