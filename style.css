@@ -69,6 +69,9 @@ section {
     max-width: 400px;
 }
 
+footer {
+    background-color: #A9CFE4;
+}
 
 footer p {
     color: var(--cor-texto);
